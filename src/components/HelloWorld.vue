@@ -80,16 +80,23 @@
         </a>
       </li>
     </ul>
+    <div id="components-demo">
+      <cascader></cascader>
+    </div>
   </div>
 </template>
 
 <script>
+import cascader from '@/components/cascader'; 
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    cascader
   }
 }
 </script>
