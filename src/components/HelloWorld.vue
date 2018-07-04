@@ -3,7 +3,7 @@
     <div class="tabs">
       <tabs/>
     </div>
-    <div class="breadcrumb">
+    <div class="breadcrumb block">
       <breadcrumb/>
     </div>
     <div class="cascader">
@@ -12,9 +12,25 @@
     <div class="slider">
       <slider/>
     </div>
-    <div class="upload">
+    <div class="upload block">
       <upload/>
     </div>
+    <div class="card">
+      <card/>
+    </div>
+    <div class="tree block">
+      <tree/>
+    </div>
+    <div class="message block">
+      <message/>
+    </div>
+    <div class="steps block">
+      <steps/>
+    </div>
+    <div class="collapse block">
+      <collapse/>
+    </div>
+
   </div>
 </template>
 
@@ -24,6 +40,11 @@ import slider from '@/components/slider'
 import upload from '@/components/upload'
 import tabs from '@/components/tabs'
 import breadcrumb from '@/components/breadcrumb'
+import card from '@/components/card'
+import tree from '@/components/tree'
+import message from '@/components/message'
+import steps from '@/components/steps'
+import collapse from '@/components/collapse'
 export default {
   name: 'HelloWorld',
   components: {
@@ -32,19 +53,19 @@ export default {
     upload,
     tabs,
     breadcrumb,
+    card,
+    tree,
+    message,
+    steps,
+    collapse,
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.upload {
-  border: 1px solid #eff2f6;
-}
-
-.breadcrumb {
-  padding: 20px;
-  border: 1px solid #eff2f6;
+.steps {
+  text-align: left;
 }
 
 </style>
