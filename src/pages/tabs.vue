@@ -10,6 +10,7 @@
         <el-tab-pane label="步骤条"><steps/></el-tab-pane>
         <el-tab-pane label="面包屑"><breadcrumb/></el-tab-pane>
         <el-tab-pane label="echarts入门示例"><echart class="block"/></el-tab-pane>
+        <el-tab-pane label="南丁格尔图"><nightingale class="block"/></el-tab-pane>
     </el-tabs>
 </template>
 
@@ -18,7 +19,6 @@
 import cascader from '@/components/cascader'; 
 import slider from '@/components/slider'
 import upload from '@/components/upload'
-import tabs from '@/components/tabs'
 import breadcrumb from '@/components/breadcrumb'
 import card from '@/components/card'
 import tree from '@/components/tree'
@@ -26,13 +26,13 @@ import message from '@/components/message'
 import steps from '@/components/steps'
 import collapse from '@/components/collapse'
 import echart from '@/components/echart-first'
+import nightingale from '@/components/nightingale'
 export default {
-  name: 'HelloWorld',
+  name: 'tabs',
   components: {
     cascader, 
     slider,
     upload,
-    tabs,
     breadcrumb,
     card,
     tree,
@@ -40,6 +40,7 @@ export default {
     steps,
     collapse,
     echart,
+    nightingale,
   }
 }
 </script>

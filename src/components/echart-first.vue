@@ -4,11 +4,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
   mounted(){
     let echarts = require('echarts/lib/echarts')// 引入基本模板，如果在项目中对体积要求比较苛刻，也可以只按需引入需要的模块(可以按需引入的模块列表见见本博客底部)
     // 例如：引入柱状图

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // 定义组件
-import HelloWorld from '@/components/HelloWorld'
+import tabs from '@/pages/tabs'
 
 Vue.use(Router)
 
@@ -9,8 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'tabs',
+      component: tabs
     }
   ]
 })

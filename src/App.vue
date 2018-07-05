@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <router-view/>
+    <el-header>Header</el-header>
+    <div class="main-content">
+      <router-view/>
+    </div>
+    <el-footer>Footer</el-footer>
   </div>
 </template>
 
@@ -17,7 +20,19 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 10px;
+}
+.el-header, .el-footer {
+  background-color: #B3C0D1;
+  color: #333;
+  line-height: 60px;
+}
+.el-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+.main-content {
+  margin-top: 60px;
 }
 </style>
