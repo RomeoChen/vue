@@ -3,9 +3,9 @@
     <el-header>
       <h1 class="nav-h1" id="navh1">romeo's web</h1>
       <el-menu router :default-active="$route.path" class="el-menu" mode="horizontal" @select="handleSelect">
-        <el-menu-item index="/">home</el-menu-item>
-        <el-menu-item index="/tabs">element-ui</el-menu-item>
-        <el-menu-item index="/echarts">echarts</el-menu-item>
+        <el-menu-item :index="{name: 'home'}">home</el-menu-item>
+        <el-menu-item :index="{name: 'tabs'}">element-ui</el-menu-item>
+        <el-menu-item :index="{name: 'echarts'}">echarts</el-menu-item>
       </el-menu>
     </el-header>
     <div class="main-content">
@@ -65,10 +65,6 @@ export default {
 
 .el-menu-item:hover {
     background-color: rgb(204, 204, 204) !important;
-}
-
-.el-menu-item a {
-  text-decoration: none!important;
 }
 
 .main-content {

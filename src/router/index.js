@@ -13,11 +13,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: home
-    },{
+    }, {
       path: '/tabs',
       name: 'tabs',
       component: tabs
-    },{
+    }, {
       path: '/echarts',
       name: 'echarts',
       component: echarts

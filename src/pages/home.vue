@@ -15,9 +15,6 @@
               <el-col :span="6">
                 <el-button icon="el-icon-mobile-phone"/>
               </el-col>
-              <el-col :span="6">
-                <span class="gray">1234567</span>
-              </el-col>
             </el-row>
         </el-col>
         <el-col :xs="12" :sm="6">
@@ -27,9 +24,6 @@
             </el-col>
             <el-col :span="6">
               <el-button icon="el-icon-goods"/>
-            </el-col>
-            <el-col :span="6">
-              <span class="gray">1234567</span>
             </el-col>
           </el-row>
         </el-col>
@@ -41,9 +35,6 @@
             <el-col :span="6">
               <el-button icon="el-icon-picture-outline"/>
             </el-col>
-            <el-col :span="6">
-              <span class="gray">1234567</span>
-            </el-col>
           </el-row>
         </el-col>
         <el-col :xs="12" :sm="6">
@@ -53,9 +44,6 @@
             </el-col>
             <el-col :span="6">
               <el-button icon="el-icon-star-off"/>
-            </el-col>
-            <el-col :span="6">
-              <span class="gray">1234567</span>
             </el-col>
           </el-row>
         </el-col>

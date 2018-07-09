@@ -1,4 +1,14 @@
 <template>
+  <div>
+    <div id="todos" class="todos-box">
+      <h1>{{ title }}</h1>
+      <ul class="todos-ul">
+        <li v-for = "(todo, index) in todos" :id="index"
+          :class="{'checked': todo.done}">
+          <label>{{ index + 1 }}.{{ todo.value }}</label>
+        </li>
+      </ul>
+    </div>
     <el-tabs type="border-card" class="elements">
         <el-tab-pane label="级联选择器"><cascader/></el-tab-pane>
         <el-tab-pane label="滑块"><slider/></el-tab-pane>
@@ -10,6 +20,7 @@
         <el-tab-pane label="步骤条"><steps/></el-tab-pane>
         <el-tab-pane label="面包屑"><breadcrumb/></el-tab-pane>
     </el-tabs>
+  </div>
 </template>
 
 
@@ -27,6 +38,16 @@ import echart from '@/components/echart-first'
 import nightingale from '@/components/nightingale'
 export default {
   name: 'tabs',
+  data () {
+    return {
+      title: 'vue-todos',
+      todos: [
+        {value: '阅读一本关于vue的书', done: false},
+        {value: '补充示例代码', done: true},
+        {value: '写日报', done: false}
+      ]
+    }
+  },
   components: {
     cascader,
     slider,
@@ -44,8 +65,34 @@ export default {
 </script>
 
 <style>
-.elements {
+.elements{
   text-align: center;
+}
+
+.todos-box {
+  background: linear-gradient(50deg,#E6A23C,#F56C6C);
+  color: white;
+}
+
+.todos-box h1 {
+  text-align: center;
+  padding: 30px 0 0 0;
+  font-size: 2em;
+  font-weight: 100;
+  /* color: white */
+}
+
+.todos-ul {
+  margin: 0 100px;
+  border: 1px solid grey;
+  font-size: 1.5em;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  padding: 20px;
+  list-style: none;
+}
+
+.todos-ul li {
+  padding: 10px;
 }
 
 .steps {
