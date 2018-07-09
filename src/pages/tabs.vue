@@ -1,5 +1,5 @@
 <template>
-    <el-tabs type="border-card">
+    <el-tabs type="border-card" class="elements">
         <el-tab-pane label="级联选择器"><cascader/></el-tab-pane>
         <el-tab-pane label="滑块"><slider/></el-tab-pane>
         <el-tab-pane label="上传"><upload class="block"/></el-tab-pane>
@@ -9,14 +9,12 @@
         <el-tab-pane label="折叠面板"><collapse/></el-tab-pane>
         <el-tab-pane label="步骤条"><steps/></el-tab-pane>
         <el-tab-pane label="面包屑"><breadcrumb/></el-tab-pane>
-        <el-tab-pane label="echarts入门示例"><echart class="block"/></el-tab-pane>
-        <el-tab-pane label="南丁格尔图"><nightingale class="block"/></el-tab-pane>
     </el-tabs>
 </template>
 
 
 <script>
-import cascader from '@/components/cascader'; 
+import cascader from '@/components/cascader'
 import slider from '@/components/slider'
 import upload from '@/components/upload'
 import breadcrumb from '@/components/breadcrumb'
@@ -30,7 +28,7 @@ import nightingale from '@/components/nightingale'
 export default {
   name: 'tabs',
   components: {
-    cascader, 
+    cascader,
     slider,
     upload,
     breadcrumb,
@@ -46,6 +44,10 @@ export default {
 </script>
 
 <style>
+.elements {
+  text-align: center;
+}
+
 .steps {
     text-align: left;
 }
